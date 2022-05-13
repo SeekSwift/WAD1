@@ -1,0 +1,48 @@
+button{
+    background-color: deepskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 225px;
+    height: 75px;
+}
+button:hover{
+    background-color: lightblue;
+}
+body{
+    background-color: lightgrey;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: space-between;
+
+}
+.desc{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: deepskyblue;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px;
+}
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: right;
+}
