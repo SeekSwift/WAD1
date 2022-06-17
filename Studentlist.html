@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="StudentList.js"></script>
     <meta charset="UTF-8">
     <title>The Imaginary University</title>
     <link rel="stylesheet" href="Studentlist.css">
@@ -21,7 +22,8 @@
 
             <button type="submit" >Update Student</button>
     </div>
-    <table>
+
+    <table id="studenttable">
     <tr>
         <th>StudentID</th>
         <th>First Name</th>
@@ -30,8 +32,10 @@
         <th>Gender</th>
         <th>Department</th>
         <th>Email</th>
+        <th>Joining Date</th>
     </tr>
-    <tr>
+        <div id="student1">
+    <tr id="1">
         <td>00001</td>
         <td>Nicolas</td>
         <td>Seek</td>
@@ -39,8 +43,11 @@
         <td>Male</td>
         <td>Mobile Application Development</td>
         <td>Nico@nicoseek.com</td>
+        <td>20.04.2015</td>
     </tr>
-    <tr>
+        </div>
+        <div id="student2">
+    <tr id="2">
         <td>00002</td>
         <td>David</td>
         <td>Seek</td>
@@ -48,26 +55,35 @@
         <td>Male</td>
         <td>Mobile Application Development</td>
         <td>David@davidseek.com</td>
+        <td>20.04.2015</td>
     </tr>
-    <tr>
+        </div>
+        <div id="student3">
+    <tr id="3">
         <td>00003</td>
         <td>Daniel</td>
         <td>Borkhard</td>
         <td>17.08.1998</td>
         <td>Male</td>
-        <td>Mobile Application Development</td>
+        <td>Web Application Development</td>
         <td>danielb@gmail.com</td>
+        <td>20.04.2015</td>
     </tr>
-    <tr>
+        </div>
+        <div id="student4">
+    <tr id="4">
         <td>00004</td>
         <td>Nick</td>
         <td>Baumgart</td>
         <td>12.09.1998</td>
         <td>Male</td>
-        <td>Mobile Application Development</td>
+        <td>Programming</td>
         <td>NickB@gmail.com</td>
+        <td>20.10.2015</td>
     </tr>
-    <tr>
+        </div>
+        <div id="student5">
+    <tr id="5">
         <td>00005</td>
         <td>Paul</td>
         <td>Dehmelt</td>
@@ -75,9 +91,27 @@
         <td>Male</td>
         <td>Data Science</td>
         <td>PaulD@gmail.com</td>
+        <td>20.10.2015</td>
     </tr>
+        </div>
 
 </table>
+    <div class="dropdown">
+        <select id="department">
+            <option value="Mobile Application Development">Mobile Application Development</option>
+            <option value="Web Application Development">Web Application Development</option>
+            <option value="Programming">Programming</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+        <button onclick="filterTable()">Filter Table</button>
+    </div>
+    <div class="dropdown">
+        <select id="semester">
+            <option value="summersemester" selected>Summer semester</option>
+            <option value="wintersemester">Winter semester</option>
+        </select>
+        <button onclick="filterTableDate()">Filter Table</button>
+    </div>
 
 </div>
 </body>

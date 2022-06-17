@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="ManageStudent.js"></script>
     <meta charset="UTF-8">
     <title>The Imaginary University</title>
     <link rel="stylesheet" href="ManageStudent.css">
     <div class="header">
         <h1>Mock University Add Student Page</h1>
+
     </div>
 </head>
 <body>
@@ -27,7 +29,7 @@
         <input type="text" name="lname" required>
 
         <label><b>Date of Birth</b></label>
-        <input type="date" name="Dob">
+        <input type="date" name="Dob" id="DOB" >
 
         <label><b>Gender</b></label>
         <input type="radio" id="male" name="gender">
@@ -48,7 +50,9 @@
             <option value="fb4">Fachbereich 4</option>
             <option value="fb5">Fachbereich 5</option>
         </select>
-        <button type="submit" >Add Student</button>
+        <label><b>Joining Date</b></label>
+        <input type="date" name="JD" id="JD" min="2015-01-01" max="2015-12-31">
+        <button type="submit">Add Student</button>
     </div>
 
 </div>
